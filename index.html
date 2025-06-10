@@ -3,92 +3,31 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fondation DABO</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #ffe6e6, #fff9e6);
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ff9999;
-            padding: 1rem;
-            text-align: center;
-            color: white;
-        }
-        nav {
-            background-color: #ffcccc;
-            text-align: center;
-            padding: 0.5rem;
-        }
-        nav a {
-            margin: 0 1rem;
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h1 {
-            color: #cc0000;
-        }
-        footer {
-            background-color: #ff9999;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-        .btn {
-            background-color: #ff6666;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #cc0000;
-        }
-    </style>
+    <title>Fondation DABO - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
 </head>
 <body>
-
 <header>
-    <h1>Fondation DABO</h1>
-    <p>Pour l'éducation, la santé et l'épanouissement des enfants de 0 à 10 ans</p>
+    <h1 data-fr="Fondation DABO" data-en="DABO Foundation">Fondation DABO</h1>
+    <div class="lang-switch">
+        <button onclick="switchLang('fr')">🇫🇷</button>
+        <button onclick="switchLang('en')">🇬🇧</button>
+    </div>
 </header>
-
 <nav>
-    <a href="#">Accueil</a>
-    <a href="#">À propos</a>
-    <a href="#">Nos projets</a>
-    <a href="#">Contact</a>
+    <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+    <a href="gallery.html" data-fr="Galerie" data-en="Gallery">Galerie</a>
+    <a href="donate.html" data-fr="Faire un don" data-en="Donate">Faire un don</a>
+    <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
 </nav>
-
 <div class="container">
-    <h2>Bienvenue à la Fondation DABO</h2>
-    <p>La Fondation DABO est une organisation sans but lucratif dédiée à la protection, à l’éducation, à la santé et à l’épanouissement des enfants âgés de 0 à 10 ans, en Ouganda et au Canada.</p>
-
-    <h3>Notre mission</h3>
-    <p>Nous œuvrons pour assurer un avenir meilleur aux enfants les plus vulnérables en leur offrant un accès à une éducation de qualité, à des soins de santé essentiels et à un environnement sûr et aimant.</p>
-
-    <h3>Rejoignez notre cause</h3>
-    <p>Votre soutien peut faire une réelle différence dans la vie d’un enfant. Que ce soit par un don, du bénévolat ou la diffusion de notre mission, chaque geste compte.</p>
-
-    <button class="btn">Faire un don</button>
+    <h2 data-fr="Bienvenue à la Fondation DABO" data-en="Welcome to DABO Foundation">Bienvenue à la Fondation DABO</h2>
+    <p data-fr="Nous œuvrons pour le bien-être des enfants de 0 à 10 ans en Ouganda et au Canada."
+       data-en="We work for the well-being of children aged 0 to 10 in Uganda and Canada.">
+       Nous œuvrons pour le bien-être des enfants de 0 à 10 ans en Ouganda et au Canada.</p>
 </div>
-
-<footer>
-    &copy; 2025 Fondation DABO – Tous droits réservés
-</footer>
-
+<footer>&copy; 2025 Fondation DABO</footer>
 </body>
 </html>
